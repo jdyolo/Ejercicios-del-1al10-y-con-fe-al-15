@@ -1,0 +1,23 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+
+int nivel = 8;
+bool tieneVIP = true;
+bool enCombate = false;
+
+string acceso = ((nivel >= 10 || tieneVIP) && !enCombate) 
+                ? "Acceso permitido" 
+                : "Acceso denegado";
+
+Console.WriteLine(acceso);
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
