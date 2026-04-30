@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int mana = 60;
+int stamina = 30;
+bool enemigoCerca = true;
+
+if (mana > 50 && stamina > 20 && enemigoCerca)
+{
+    Console.WriteLine("Habilidad activada");
+}
+else
+{
+    Console.WriteLine("No se puede activar");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
