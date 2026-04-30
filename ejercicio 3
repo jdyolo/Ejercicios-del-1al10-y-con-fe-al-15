@@ -1,0 +1,24 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int nivel = 8;
+
+if (nivel >= 10)
+{
+    Console.WriteLine("Acceso permitido");
+}
+else
+{
+    Console.WriteLine("Acceso denegado");
+    Console.WriteLine("Necesita seguir entrenando");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
