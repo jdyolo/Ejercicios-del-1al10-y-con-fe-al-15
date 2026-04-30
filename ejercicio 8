@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+bool llaveDorada = false;
+int nivel = 20;
+bool enCombate = false;
+
+if ((llaveDorada || nivel > 15) && !enCombate)
+{
+    Console.WriteLine("Cofre abierto");
+}
+else
+{
+    Console.WriteLine("No se puede abrir el cofre");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
