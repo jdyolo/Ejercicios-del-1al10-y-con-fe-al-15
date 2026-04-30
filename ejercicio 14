@@ -1,0 +1,22 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+double dañoBase = 100;
+bool esCritico = true;
+bool enemigoVulnerable = false;
+
+double dañoFinal = (esCritico && enemigoVulnerable) ? dañoBase * 2 :
+                   (esCritico) ? dañoBase * 1.5 :
+                   dañoBase;
+
+Console.WriteLine(dañoFinal);
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
