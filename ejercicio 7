@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+bool tienePocion = false;
+bool zonaSegura = true;
+bool estaMuerto = false;
+
+if (!estaMuerto && (tienePocion || zonaSegura))
+{
+    Console.WriteLine("Curación disponible");
+}
+else
+{
+    Console.WriteLine("No puede curarse");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
