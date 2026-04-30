@@ -1,0 +1,27 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+bool veJugador = true;
+bool estaCerca = false;
+
+if (veJugador && estaCerca)
+{
+    Console.WriteLine("Atacar");
+}
+else if (veJugador && !estaCerca)
+{
+    Console.WriteLine("Perseguir");
+}
+else
+{
+    Console.WriteLine("Patrullar");
+}
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
