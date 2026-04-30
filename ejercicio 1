@@ -1,0 +1,28 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int vida = 25;
+
+if (vida <= 0)
+{
+    Console.WriteLine("Muerto");
+}
+else if (vida < 30)
+{
+    Console.WriteLine("Herido");
+}
+else
+{
+    Console.WriteLine("Saludable");
+}
+  }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
