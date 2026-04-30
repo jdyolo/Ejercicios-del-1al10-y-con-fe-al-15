@@ -1,0 +1,21 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+
+int stamina = 50;
+
+string movimiento = (stamina > 70) ? "Sprint" :
+                    (stamina > 30) ? "Run" :
+                    "Walk";
+
+Console.WriteLine(movimiento);
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
