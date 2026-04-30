@@ -1,0 +1,31 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int temperatura = 15;
+
+if (temperatura <= 0)
+{
+    Console.WriteLine("Nieve");
+}
+else if (temperatura <= 15)
+{
+    Console.WriteLine("Nublado");
+}
+else if (temperatura <= 25)
+{
+    Console.WriteLine("Lluvia");
+}
+else
+{
+    Console.WriteLine("Soleado");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
