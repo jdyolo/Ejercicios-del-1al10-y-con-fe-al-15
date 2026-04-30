@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+bool tieneArma = true;
+bool tieneMunicion = true;
+bool estaAturdido = false;
+
+if (tieneArma && tieneMunicion && !estaAturdido)
+{
+    Console.WriteLine("Puede atacar");
+}
+else
+{
+    Console.WriteLine("No puede atacar");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
