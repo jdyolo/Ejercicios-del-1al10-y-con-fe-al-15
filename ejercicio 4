@@ -1,0 +1,31 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int velocidad = 60;
+
+if (velocidad == 0)
+{
+    Console.WriteLine("Detenido");
+}
+else if (velocidad <= 20)
+{
+    Console.WriteLine("Caminando");
+}
+else if (velocidad <= 50)
+{
+    Console.WriteLine("Corriendo");
+}
+else
+{
+    Console.WriteLine("Sprint");
+}
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
