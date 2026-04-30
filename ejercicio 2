@@ -1,0 +1,30 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+int puntaje = 350;
+
+if (puntaje < 100)
+{
+    Console.WriteLine("Novato");
+}
+else if (puntaje < 300)
+{
+    Console.WriteLine("Intermedio");
+}
+else if (puntaje < 600)
+{
+    Console.WriteLine("Avanzado");
+}
+else
+{
+    Console.WriteLine("Elite");
+}
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
