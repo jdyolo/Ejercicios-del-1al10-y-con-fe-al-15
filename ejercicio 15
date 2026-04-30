@@ -1,0 +1,22 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderKeywordFilter;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+bool veJugador = true;
+bool estaCerca = true;
+bool energiaSuficiente = true;
+
+string accion = (veJugador && estaCerca && energiaSuficiente) ? "Atacar" :
+                (veJugador && !estaCerca) ? "Perseguir" :
+                "Esperar";
+
+Console.WriteLine(accion);
+
+// Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
